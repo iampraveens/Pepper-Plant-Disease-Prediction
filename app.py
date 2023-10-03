@@ -81,13 +81,13 @@ uploaded_image = st.file_uploader("Upload an image", type=["jpg", "png", "jpeg"]
 
 
 if uploaded_image is not None:
-    column_1, column_2, column_3 = st.columns([20,6,80])
+    column_1, column_2, column_3 = st.columns([35,10,70])
     
     with column_1:
         st.image(uploaded_image, caption="Uploaded Image", channels='RGB')
         predict_button = st.button(label='Predict Disease', type='secondary')
         
-    with column_3:
+    with column_1:
         if predict_button:
             img = keras.preprocessing.image.load_img(uploaded_image, target_size=(256,256))
             img_array = np.array(img)
@@ -97,7 +97,8 @@ if uploaded_image is not None:
             prediction = model.predict(img_array)
             label = np.argmax(prediction[0])
 
-            column_4, column_5 = st.columns([20,28])
+            column_4, column_5 = st.columns([35,5])
+            
             with column_4:
                 if label == 0:
                     st.error("Plant is affected by bacteria")
