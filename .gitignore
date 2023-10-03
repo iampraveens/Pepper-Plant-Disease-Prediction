@@ -153,8 +153,9 @@ dmypy.json
 cython_debug/
 
 # Large files
-model.h5
-weight.h5
+# model.h5
+# weight.h5
+
 # PyCharm
 #  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
 #  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
