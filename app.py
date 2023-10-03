@@ -93,7 +93,7 @@ if uploaded_image is not None:
             img_array = np.array(img)
             img_array = img_array.reshape(1, 256, 256, 3)
             model = load_model('model.h5')
-
+            
             prediction = model.predict(img_array)
             label = np.argmax(prediction[0])
 
