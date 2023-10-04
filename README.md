@@ -27,18 +27,16 @@ To run this project locally, follow these steps:
 
 1. Clone the repository to your local machine:
 
-   ```bash
+```bash
    git clone https://github.com/iampraveens/Pepper-Plant-Disease-Prediction.git
 ```
-
 2. Install the required Python packages:
 
 ```bash
 pip install -r requirements.txt
 ```
-
 3. Run the application
 
-   ```bash
+```bash
 streamlit run app.py
 ```
