@@ -8,7 +8,6 @@ This Pepper Plant Disease Prediction project combines the power of machine learn
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Overview
@@ -41,16 +40,30 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-
 ### Usage
 
-```markdown
-## Usage
-
 1. After running the application, you will see an option to upload an image of a pepper plant leaf.
-
 2. Upload the image you want to analyze.
-
 3. Click the "Predict Disease" button.
-
 4. The application will display the prediction result - whether the plant is affected by bacteria or if it's healthy.
+
+## Dockerized Web App
+You can also deploy the Car Price Prediction web application using Docker. Build the Docker image and run the container:
+```bash
+docker build -t your_docker_username/health-research-tool-app .
+```
+- To build a docker image.
+
+```bash
+docker run -d -p 8501:8501 your_docker_username/health-research-tool-app
+```
+- To run as a container.
+
+Access the web app at `http://localhost:8501` or `your_ip_address:8501` in your web browser.
+Else if you want to access my pre-built container, here is the code below to pull from docker hub(Public).
+```bash
+docker pull iampraveens/health-research-tool-app:latest
+```
+
+## License 
+This project is licensed under the MIT License - see the [License](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt) file for details.
