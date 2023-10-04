@@ -2,6 +2,9 @@
 
 This Pepper Plant Disease Prediction project combines the power of machine learning and user-friendly design to address a real-world problem in agriculture, making it a valuable tool for farmers, gardeners, and anyone interested in plant health.
 
+## Application
+Deployed the model on streamlit cloud(temp) [Streamlit App](https://pepper-plant-disease-prediction.streamlit.app/) [Sample Images](https://drive.google.com/drive/folders/17NGHLB_uW6mQmOWxbqmSeFynrHpTcF0m?usp=sharing)
+
 ## Table of Contents
 
 - [Overview](#overview)
