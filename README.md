@@ -28,7 +28,7 @@ To run this project locally, follow these steps:
 1. Clone the repository to your local machine:
 
 ```bash
-   git clone https://github.com/iampraveens/Pepper-Plant-Disease-Prediction.git
+git clone https://github.com/iampraveens/Pepper-Plant-Disease-Prediction.git
 ```
 2. Install the required Python packages:
 
@@ -40,3 +40,17 @@ pip install -r requirements.txt
 ```bash
 streamlit run app.py
 ```
+
+
+### Usage
+
+```markdown
+## Usage
+
+1. After running the application, you will see an option to upload an image of a pepper plant leaf.
+
+2. Upload the image you want to analyze.
+
+3. Click the "Predict Disease" button.
+
+4. The application will display the prediction result - whether the plant is affected by bacteria or if it's healthy.
